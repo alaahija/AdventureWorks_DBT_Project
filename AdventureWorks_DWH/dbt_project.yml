@@ -1,0 +1,37 @@
+name: 'adventureworks_dwh'
+version: '1.0.0'
+profile: 'AdventureWorks_DWH'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+models:
+  adventureworks_dwh:
+    staging:
+      +schema: dbo_staging
+      +materialized: view
+    intermediate:
+      +schema: dbo_intermediate
+      +materialized: table
+    marts:
+      +schema: dbo_marts
+      +materialized: table
+      dimensions:
+        +materialized: table
+      facts:
+        +materialized: table
+      reports:
+        +materialized: table
+
+snapshots:
+  adventureworks_dwh:
+    +target_schema: dbo_snapshots
+
+seeds:
+  adventureworks_dwh:
+    +schema: dbo_raw
+    +quote_columns: true

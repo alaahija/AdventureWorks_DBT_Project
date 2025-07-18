@@ -1,0 +1,51 @@
+version: 2
+
+sources:
+  - name: raw
+    database: AdventureWorks_DWH
+    schema: dbo_raw
+    quoting:
+      database: true
+      schema: true
+      identifier: true
+
+    tables:
+      - name: customer
+        identifier: Customer
+        description: "Customer table from source system"
+
+      - name: person
+        identifier: Person
+        description: "Person table from source system"
+
+      - name: store
+        identifier: Store
+        description: "Store table from source system"
+
+      - name: product
+        identifier: Product
+        description: "Product table from source system"
+
+      - name: product_subcategory
+        identifier: ProductSubcategory
+        description: "Product Subcategory table"
+
+      - name: product_category
+        identifier: ProductCategory
+        description: "Product Category table"
+
+      - name: sales_order_header
+        identifier: SalesOrderHeader
+        description: "Sales order header details"
+
+      - name: sales_order_detail
+        identifier: SalesOrderDetail
+        description: "Sales order line items"
+
+      - name: sales_person
+        identifier: SalesPerson
+        description: "Sales person data"
+
+      - name: employee
+        identifier: Employee
+        description: "Employee table"

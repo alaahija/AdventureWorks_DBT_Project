@@ -1,0 +1,86 @@
+[0m22:28:29.057300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028064DBFB60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280661D3D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280661D39D0>]}
+
+
+============================== 22:28:29.066809 | ff9c973e-c134-4a4c-affe-a4728f0088b2 ==============================
+[0m22:28:29.066809 [info ] [MainThread]: Running with dbt=1.10.4
+[0m22:28:29.068333 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alaah\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init AdventureWorks_DWH', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:28:29.120931 [debug] [MainThread]: Starter project path: C:\Users\alaah\OneDrive\Documents\AdventureWorks_DWH\.venv\Lib\site-packages\dbt\include\starter_project
+[0m22:28:29.171952 [info ] [MainThread]: 
+Your new dbt project "AdventureWorks_DWH" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:28:29.173600 [info ] [MainThread]: Setting up your profile.
+[0m22:28:56.166790 [info ] [MainThread]: No sample profile found for fabric.
+[0m22:28:56.169257 [debug] [MainThread]: Command `dbt init` succeeded at 22:28:56.168993 after 27.38 seconds
+[0m22:28:56.169941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280678CDCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028067A28B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028067657680>]}
+[0m22:28:56.170656 [debug] [MainThread]: Flushing usage events
+[0m22:28:57.008214 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:33:54.873041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002372007FB60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023722453D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237224539D0>]}
+
+
+============================== 22:33:54.883268 | 8caad335-ae77-441d-a7c7-b57202da7de5 ==============================
+[0m22:33:54.883268 [info ] [MainThread]: Running with dbt=1.10.4
+[0m22:33:54.884768 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\alaah\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:33:54.939171 [info ] [MainThread]: dbt version: 1.10.4
+[0m22:33:54.940416 [info ] [MainThread]: python version: 3.13.3
+[0m22:33:54.941565 [info ] [MainThread]: python path: C:\Users\alaah\OneDrive\Documents\AdventureWorks_DWH\.venv\Scripts\python.exe
+[0m22:33:54.942690 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m22:33:55.468120 [info ] [MainThread]: Using profiles dir at C:\Users\alaah\.dbt
+[0m22:33:55.469165 [info ] [MainThread]: Using profiles.yml file at C:\Users\alaah\.dbt\profiles.yml
+[0m22:33:55.469968 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\alaah\OneDrive\Documents\AdventureWorks_DWH\dbt_project.yml
+[0m22:33:55.470763 [info ] [MainThread]: adapter type: fabric
+[0m22:33:55.471491 [info ] [MainThread]: adapter version: 1.9.5
+[0m22:33:55.472460 [info ] [MainThread]: Configuration:
+[0m22:33:55.473260 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:33:55.474002 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:33:55.474964 [info ] [MainThread]: Required dependencies:
+[0m22:33:55.476039 [debug] [MainThread]: Executing "git --help"
+[0m22:33:55.546875 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:33:55.547912 [debug] [MainThread]: STDERR: "b''"
+[0m22:33:55.548599 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:33:55.549498 [info ] [MainThread]: Connection:
+[0m22:33:55.550320 [info ] [MainThread]:   server: 5ll3v5ad2izuhhzyj5ezy3dpny-6553lni4ayuulnflytcwkmslxe.datawarehouse.fabric.microsoft.com
+[0m22:33:55.551056 [info ] [MainThread]:   database: AdventureWorks_DWH
+[0m22:33:55.551780 [info ] [MainThread]:   schema: dbo
+[0m22:33:55.552798 [info ] [MainThread]:   UID: None
+[0m22:33:55.553962 [info ] [MainThread]:   client_id: None
+[0m22:33:55.554949 [info ] [MainThread]:   authentication: CLI
+[0m22:33:55.555933 [info ] [MainThread]:   encrypt: True
+[0m22:33:55.556833 [info ] [MainThread]:   trust_cert: False
+[0m22:33:55.557610 [info ] [MainThread]:   retries: 3
+[0m22:33:55.558647 [info ] [MainThread]:   login_timeout: 0
+[0m22:33:55.559414 [info ] [MainThread]:   query_timeout: 0
+[0m22:33:55.560102 [info ] [MainThread]:   trace_flag: False
+[0m22:33:55.561286 [info ] [MainThread]: Registered adapter: fabric=1.9.5
+[0m22:33:56.109361 [debug] [MainThread]: Acquiring new fabric connection 'debug'
+[0m22:33:56.110230 [debug] [MainThread]: Using fabric connection "debug"
+[0m22:33:56.110805 [debug] [MainThread]: On debug: select 1 as id
+[0m22:33:56.111331 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:33:56.111982 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=5ll3v5ad2izuhhzyj5ezy3dpny-6553lni4ayuulnflytcwkmslxe.datawarehouse.fabric.microsoft.com;Database=AdventureWorks_DWH;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.9.5;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m22:34:06.463333 [debug] [MainThread]: fabric adapter: Connected to db: AdventureWorks_DWH
+[0m22:34:06.541936 [debug] [MainThread]: SQL status: OK in 10.000 seconds
+[0m22:34:06.543874 [debug] [MainThread]: On debug: Close
+[0m22:34:06.544487 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:34:06.545459 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:34:06.546349 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\alaah\OneDrive\Documents\AdventureWorks_DWH\dbt_project.yml> not found
+
+[0m22:34:06.548530 [debug] [MainThread]: Command `dbt debug` failed at 22:34:06.548286 after 11.98 seconds
+[0m22:34:06.549163 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:34:06.549772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023722BC7360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023722D03530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002372294BAC0>]}
+[0m22:34:06.550472 [debug] [MainThread]: Flushing usage events
+[0m22:34:07.365401 [debug] [MainThread]: An error was encountered while trying to flush usage events
