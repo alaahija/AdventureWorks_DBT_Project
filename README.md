@@ -104,6 +104,34 @@ models:
               field: product_id
 ```
 ---
+### `macros`
+```sql
+{% macro generate_surrogate_key(field_list) -%}
+    {{
+        return(
+            "md5(concat("
+            + field_list|join(", ")
+            + "))"
+        )
+    }}
+{%- endmacro %}
+```
+```sql
+{{ generate_surrogate_key(['customer_id', 'order_date']) }} AS sk_customer_order
+```
+## 🔍 Example: Surrogate Key Macro
+
+```sql
+SELECT
+    {{ generate_surrogate_key(['customer_id', 'order_date']) }} as sales_key,
+    *
+FROM {{ ref('stg_orders') }}
+
+```sql
+{{ generate_surrogate_key(['customer_id', 'order_date']) }} AS sk_customer_order
+```
+
+---
 
 ## 🏗️ Features
 
@@ -140,6 +168,4 @@ models:
 
 ## 🔍 Example: Surrogate Key Macro
 
-```sql
-{{ generate_surrogate_key(['customer_id', 'order_date']) }} AS sk_customer_order
 
