@@ -166,33 +166,33 @@ SELECT {{ generate_surrogate_key(['customer_id', 'order_date']) }} AS sk_custome
 - ✔ Build staging and intermediate layers  
 - ✔ Create facts and dimensions  
 - ✔ Add documentation and tests  
-- ☐ Add more snapshots (e.g., slowly changing dimensions)  
+- ✔ Add more snapshots (e.g., slowly changing dimensions)  
 - ☐ Deploy and schedule in Fabric / ADF  
 - ☐ Add CI/CD pipeline via GitHub Actions  
 ---
 ## 🛠️ Installation & Usage
 
 ### Clone repository
-git clone https://github.com/your-repo/AdventureWorks_DWH.git
-cd AdventureWorks_DWH
+```git clone https://github.com/your-repo/AdventureWorks_DWH.git
+cd AdventureWorks_DWH```
 
 ### Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
+```python -m venv venv
+   source venv/bin/activate  # Linux/Mac```
 ### venv\Scripts\activate  # Windows
 
 ### Install dependencies
-pip install dbt-core dbt-fabric
+```pip install dbt-core dbt-fabric```
 
 ### Run all models
-dbt run
+```dbt run```
 
 ### Run specific models
-dbt run --select stg_customers+
+```dbt run --select stg_customers+```
 
 ### Run tests
-dbt test
+```dbt test```
 
 ### Generate documentation
-dbt docs generate
-dbt docs serve
+```dbt docs generate```
+```dbt docs serve```
