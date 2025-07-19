@@ -160,7 +160,15 @@ SELECT {{ generate_surrogate_key(['customer_id', 'order_date']) }} AS sk_custome
 - 🧱 **Microsoft Fabric / OneLake**
 - 🧪 **dbt Tests (not_null, unique, relationships)**
 - 📚 **dbt Documentation Site**
+---
+## 🗺️ Roadmap
 
+- ✔ Build staging and intermediate layers  
+- ✔ Create facts and dimensions  
+- ✔ Add documentation and tests  
+- ☐ Add more snapshots (e.g., slowly changing dimensions)  
+- ☐ Deploy and schedule in Fabric / ADF  
+- ☐ Add CI/CD pipeline via GitHub Actions  
 ---
 ## 🛠️ Installation & Usage
 
