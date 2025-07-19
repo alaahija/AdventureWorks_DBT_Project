@@ -15,8 +15,6 @@ AdventureWorks_DWH/
 │
 ├── dbt_project.yml
 ├── packages.yml
-├── README.md
-│
 ├── models/
 │   ├── staging/
 │   │   ├── stg_customer.sql
@@ -37,13 +35,13 @@ AdventureWorks_DWH/
 │   │       └── fact_sales_order.sql
 │   │
 │   └── snapshots/
-│       └── ...
+│       └── snap_employee.sql
 │
 ├── macros/
 │   └── generate_surrogate_key.sql
 │
 ├── seeds/
-│   └── ...
+│   └── CSV_Files
 │
 ├── tests/
   └── ...
@@ -116,7 +114,7 @@ models:
     }}
 {%- endmacro %}
 ```
-## 🔍 Example: Surrogate Key Macro
+### 🔍 Example: Surrogate Key Macro
 
 ```sql
 SELECT
