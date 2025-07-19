@@ -176,8 +176,7 @@ cd AdventureWorks_DWH
 
 ### Create virtual environment
  python -m venv venv
- source venv/bin/activate  # Linux/Mac 
-### venv\Scripts\activate  # Windows
+ venv\Scripts\activate  # Windows
 
 ### Install dependencies
  pip install dbt-core dbt-fabric 
