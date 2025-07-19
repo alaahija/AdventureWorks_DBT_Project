@@ -1,4 +1,4 @@
-# 📊 AdventureWorks dbt Project
+# 📊 AdventureWorks DBT Project
 
 ![DBT](https://img.shields.io/badge/DBT-%F0%9F%92%BE%20Data%20Build%20Tool-orange?logo=dbt&logoColor=white)
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-%F0%9F%93%9D-red?logo=microsoftsqlserver&logoColor=white)
@@ -10,23 +10,45 @@
 
 ## 🧩 Project Structure
 
-├── models/
-│ ├── staging/
-│ │ └── stg_.sql
-│ ├── intermediate/
-│ │ └── int_.sql
-│ ├── marts/
-│ │ ├── dimensions/
-│ │ │ └── dim_*.sql
-│ │ └── facts/
-│ │ └── fact_sales_order.sql
-│ └── snapshots/
-│ └── ...
-├── macros/
-│ └── generate_surrogate_key.sql
-├── seeds/
+```text
+AdventureWorks_DWH/
+│
 ├── dbt_project.yml
-└── README.md
+├── packages.yml
+├── README.md
+│
+├── models/
+│   ├── staging/
+│   │   ├── stg_customer.sql
+│   │   ├── stg_product.sql
+│   │   └── ...
+│   │
+│   ├── intermediate/
+│   │   ├── int_sales_orders.sql
+│   │   └── ...
+│   │
+│   ├── marts/
+│   │   ├── dimensions/
+│   │   │   ├── dim_customer.sql
+│   │   │   ├── dim_product.sql
+│   │   │   └── ...
+│   │   │
+│   │   └── facts/
+│   │       └── fact_sales_order.sql
+│   │
+│   └── snapshots/
+│       └── ...
+│
+├── macros/
+│   └── generate_surrogate_key.sql
+│
+├── seeds/
+│   └── ...
+│
+├── tests/
+  └── ...
+
+
 
 ---
 
