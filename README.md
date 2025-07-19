@@ -125,7 +125,7 @@ SELECT
 FROM {{ ref('stg_orders') }}
 ```
 ```sql
-{{ generate_surrogate_key(['customer_id', 'order_date']) }} AS sk_customer_order
+SELECT {{ generate_surrogate_key(['customer_id', 'order_date']) }} AS sk_customer_order
 ```
 
 ---
@@ -163,6 +163,27 @@ FROM {{ ref('stg_orders') }}
 
 ---
 
-## 🔍 Example: Surrogate Key Macro
+# Clone repository
+git clone https://github.com/your-repo/AdventureWorks_DWH.git
+cd AdventureWorks_DWH
 
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate  # Windows
+
+# Install dependencies
+pip install dbt-core dbt-fabric
+# Run all models
+dbt run
+
+# Run specific models
+dbt run --select stg_customers+
+
+# Run tests
+dbt test
+
+# Generate documentation
+dbt docs generate
+dbt docs serve
 
