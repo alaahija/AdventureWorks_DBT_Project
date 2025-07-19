@@ -130,7 +130,7 @@ SELECT {{ generate_surrogate_key(['customer_id', 'order_date']) }} AS sk_custome
 
 ## 🏗️ Features
 
-- 🔄 **ETL Pipelines** using dbt models (staging ➝ intermediate ➝ marts)
+- 🔄 **ELT Pipelines** using dbt models (staging ➝ intermediate ➝ marts)
 - 📦 Fact & Dimension Models (Kimball)
 - 🧠 Surrogate key generation using custom macros
 - 📈 Sales Orders Fact Table with links to Customer, Product, Date, and Store dimensions
