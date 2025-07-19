@@ -77,7 +77,8 @@ models:
       dimensions:
         materialized: table
       facts:
-        materialized: table ```
+        materialized: table
+ ```
 ---
 
 ## 🏗️ Features
