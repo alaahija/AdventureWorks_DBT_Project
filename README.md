@@ -80,6 +80,30 @@ models:
         materialized: table
  ```
 ---
+### `schema.yml` (for fact_sales_order)
+```
+version: 2
+
+models:
+  - name: fact_sales_order
+    description: "Fact table for sales orders with links to customer, product, and store dimensions"
+    columns:
+      - name: sales_order_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
+      - name: product_id
+        tests:
+          - relationships:
+              to: ref('dim_product')
+              field: product_id
+```
+---
 
 ## 🏗️ Features
 
