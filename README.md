@@ -164,27 +164,27 @@ SELECT {{ generate_surrogate_key(['customer_id', 'order_date']) }} AS sk_custome
 ---
 ## 🛠️ Installation & Usage
 
-# Clone repository
+### Clone repository
 git clone https://github.com/your-repo/AdventureWorks_DWH.git
 cd AdventureWorks_DWH
 
-# Create virtual environment
+### Create virtual environment
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate  # Windows
+### venv\Scripts\activate  # Windows
 
-# Install dependencies
+### Install dependencies
 pip install dbt-core dbt-fabric
 
-# Run all models
+### Run all models
 dbt run
 
-# Run specific models
+### Run specific models
 dbt run --select stg_customers+
 
-# Run tests
+### Run tests
 dbt test
 
-# Generate documentation
+### Generate documentation
 dbt docs generate
 dbt docs serve
