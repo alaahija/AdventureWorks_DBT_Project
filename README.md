@@ -116,8 +116,6 @@ models:
     }}
 {%- endmacro %}
 ```
-```sql
-{{ generate_surrogate_key(['customer_id', 'order_date']) }} AS sk_customer_order
 ```
 ## 🔍 Example: Surrogate Key Macro
 
