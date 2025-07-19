@@ -48,8 +48,36 @@ AdventureWorks_DWH/
 ├── tests/
   └── ...
 ```
+---
 
+## 📄 Configuration Examples
 
+### `dbt_project.yml`
+
+```yaml
+name: 'adventureworks_dwh'
+version: '1.0.0'
+config-version: 2
+
+profile: 'fabric'
+
+model-paths: ['models']
+snapshot-paths: ['snapshots']
+seed-paths: ['seeds']
+test-paths: ['tests']
+macro-paths: ['macros']
+
+models:
+  adventureworks_dwh:
+    staging:
+      materialized: view
+    intermediate:
+      materialized: view
+    marts:
+      dimensions:
+        materialized: table
+      facts:
+        materialized: table
 ---
 
 ## 🏗️ Features
