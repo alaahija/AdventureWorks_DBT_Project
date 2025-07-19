@@ -1,4 +1,4 @@
-{% snapshot snap_customer %}
+{% snapshot snap_employee %}
 {{
   config(
     target_schema='snapshots',
