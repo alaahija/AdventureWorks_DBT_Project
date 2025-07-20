@@ -78,7 +78,7 @@ models:
         materialized: table
  ```
 ---
-### `schema.yml` (for fact_sales_order)
+### `schema.yml` 
 ```
 version: 2
 
